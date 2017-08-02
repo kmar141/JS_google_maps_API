@@ -15,7 +15,8 @@ var initialise = function(){
   vegas.addEventListener("click", mainMap.vegasBaby.bind(mainMap));
 
   var home = document.querySelector("#home");
-  vegas.addEventListener("click", mainMap.setCenter(center).bind(mainMap));
+  home.addEventListener("click", function(){mainMap.googleMap.setCenter(center)
+  });
 }
 
 window.addEventListener("load", initialise);
